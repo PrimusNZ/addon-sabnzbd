@@ -1,0 +1,13 @@
+{
+    "build_from_template": {
+        "image": "linuxserver/sabnzbd",
+        "version": "latest"
+    },
+    "build_from": {
+        "armhf": "linuxserver/sabnzbd:arm32v7-latest",
+        "aarch64": "linuxserver/sabnzbd:arm64v8-latest",
+        "amd64": "linuxserver/sabnzbd:amd64-latest"
+    },
+    "squash": false,
+    "args": {}
+}
