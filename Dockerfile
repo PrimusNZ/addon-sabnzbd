@@ -13,9 +13,9 @@ RUN curl -J -L -o /tmp/bashio.tar.gz \
     && ln -s /usr/lib/bashio/bashio /usr/bin/bashio \
     && rm -fr /tmp/* 
 
-# use /data instead of /config for hass.io environment
-RUN sed -i "s|/config|/config/sabnzbd|g" /etc/s6-overlay/s6-rc.d/init-sabnzbd-config/run \
-    && sed -i "s|/config|/config/sabnzbd|g" /etc/s6-overlay/s6-rc.d/svc-sabnzbd/run
+# use /share/sabnzbd/config instead of /config for hass.io environment
+RUN sed -i "s|/config|/share/sabnzbd/config|g" /etc/s6-overlay/s6-rc.d/init-sabnzbd-config/run \
+    && sed -i "s|/config|/share/sabnzbd/config|g" /etc/s6-overlay/s6-rc.d/svc-sabnzbd/run
 
 # copy local files
 COPY root/ /
