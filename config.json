@@ -1,7 +1,7 @@
 {
   "name": "SABnzbd",
   "version": "0.1.0",
-  "slug": "sonarr",
+  "slug": "sabnzbd",
   "legacy": false,
   "init": false,
   "maintenance": {
