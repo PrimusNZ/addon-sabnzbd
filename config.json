@@ -44,5 +44,5 @@
     "**/logs/*",
     "**/MediaCover/*"
   ],
-  "image": "ghcr.io/primusnz/hassio-addons/{arch}-sonarr"
+  "image": "ghcr.io/primusnz/hassio-addons/{arch}-sabnzbd"
 }
