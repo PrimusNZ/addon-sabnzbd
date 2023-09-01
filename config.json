@@ -23,7 +23,6 @@
     "8080/tcp": "web interface"
   },
   "map": [
-    "config:rw",
     "share:rw",
     "media:rw",
     "ssl"
